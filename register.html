@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>Register</title>
+    </head>
+    <body>
+        <!-- NAVIGATION -->
+        <nav id="mainNav" class="transition-all">
+            <div class="relative container mx-auto p-5 scale-90">
+                <!-- FLEX CONTAINER FOR NAV -->
+                <div
+                    class="flex justify-between items-center lg:text-lg font-bold text-skyBlue"
+                >
+                    <!-- LOGO -->
+                    <div
+                        class="w-1/6 md:w-1/4 flex items-center justify-start shrink text-red-400"
+                    >
+                        Logo
+                    </div>
+                    <!-- NAV LINKS -->
+                    <div
+                        class="navlinks hidden space-x-6 md:w-1/2 md:flex items-center justify-center"
+                    >
+                        <!-- NAV ITEMS -->
+                        <a
+                            href="./index.html"
+                            class="navbar--link transition-all"
+                            >Home</a
+                        >
+                        <a
+                            href="./prevention.html"
+                            class="navbar--link transition-all"
+                            >Prevention</a
+                        >
+                        <a
+                            href="./resources.html"
+                            class="navbar--link navbar--link--relative transition-all"
+                            >Resources</a
+                        >
+                        <a
+                            href="./events.html"
+                            class="navbar--link navbar--link--relative transition-all"
+                            >Events</a
+                        >
+                    </div>
+                    <!-- LOGIN BUTTONS -->
+                    <div
+                        class="buttons hidden justify-end items-center md:w-1/4 space-x-4 md:flex lg:space-x-5"
+                    >
+                        <div
+                            class="navbar--button navbar--button--relative transition-all lg:text-base"
+                        >
+                            &nbsp;Login&nbsp;
+                        </div>
+                        <div
+                            class="navbar--button navbar--button--relative transition-all lg:text-base"
+                        >
+                            Register
+                        </div>
+                    </div>
+                    <!-- HAMBURGER MENU -->
+                    <div class="hamburger md:hidden">
+                        <div class="hamburger-top"></div>
+                        <div class="hamburger-middle"></div>
+                        <div class="hamburger-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- MAIN CONTENT -->
+        <section class="min-h-screen mb-32">
+            <div class="flex justify-center items-center mt-10">
+                <h1
+                    class="main--header mx-2 mb-10 text-3xl font-bold text-skyBlue text-center md:text-4xl"
+                >
+                    Register
+                </h1>
+            </div>
+            <div class="w-11/12 border-2 border-skyBlue mx-auto mt-10 md:w-1/3">
+                <form
+                    class="w-4/5 md:w-3/5 flex flex-col justify-center items-start mx-auto py-10 space-y-6"
+                    action="#"
+                >
+                    <div class="w-full space-y-3">
+                        <label
+                            for="name"
+                            class="text-darkGray font-bold mb-3 text-xl"
+                            >Enter your name:</label
+                        >
+                        <input
+                            type="text"
+                            placeholder="John Doe"
+                            name="name"
+                            class="text-darkBlue py-1 px-2 border-skyBlue border-2 w-full focus:outline-none focus:border-darkBlue focus:ring-0 bg-lightBlueGray"
+                        />
+                    </div>
+                    <div class="w-full space-y-3">
+                        <label
+                            for="email"
+                            class="text-darkGray font-bold mb-3 text-xl"
+                            >Enter your email:</label
+                        >
+                        <input
+                            type="text"
+                            placeholder="johndoe@email.com"
+                            name="email"
+                            class="text-darkBlue py-1 px-2 border-skyBlue border-2 w-full focus:outline-none focus:border-darkBlue focus:ring-0 bg-lightBlueGray"
+                        />
+                    </div>
+                    <div class="w-full space-y-3">
+                        <label
+                            for="email"
+                            class="text-darkGray font-bold mb-3 text-xl"
+                            >Enter your password:</label
+                        >
+                        <input
+                            type="password"
+                            placeholder="password"
+                            name="password"
+                            class="text-darkBlue py-1 px-2 border-skyBlue border-2 w-full focus:outline-none focus:border-darkBlue focus:ring-0 bg-lightBlueGray"
+                        />
+                    </div>
+                    <div class="w-full space-y-3">
+                        <label
+                            for="conpassword"
+                            class="text-darkGray font-bold mb-3 text-xl"
+                            >Confirm your password:</label
+                        >
+                        <input
+                            type="password"
+                            placeholder="password"
+                            name="conpassword"
+                            class="text-darkBlue py-1 px-2 border-skyBlue border-2 w-full focus:outline-none focus:border-darkBlue focus:ring-0 bg-lightBlueGray"
+                        />
+                    </div>
+                    <div class="mt-10 mx-auto">
+                        <div
+                            class="font-bold border-2 drop-shadow-lg px-4 py-2 text-sm cursor-pointer border-skyBlue text-skyBlue transition-all lg:text-base hover:text-white hover:bg-skyBlue"
+                        >
+                            Register
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!-- UNDER FORM -->
+            <div
+                class="w-11/12 md:w-1/3 text-sm text-lightGray mx-auto text-center mt-3"
+            >
+                <p>
+                    <span class="italic"> Already have an account, login </span>
+                    <a
+                        href="./login.html"
+                        class="text-bold text-skyBlue border-b-2 border-dashed hover:border-solid not-italic"
+                        >here</a
+                    >.
+                </p>
+            </div>
+        </section>
+
+        <!-- ABOVE FOOTER -->
+        <section class="bg-darkBlue w-full h-16 flex items-center relative">
+            <div class="absolute left-56 overflow-hidden h-16">
+                <div
+                    class="-translate-y-8 opacity-30 w-32 h-32 rounded-full bg-skyBlue"
+                ></div>
+            </div>
+
+            <div
+                class="w-full text-sm pr-2 text-white pt-2 flex justify-end items-center space-x-5 md:text-base md:container md:pr-0"
+            >
+                <p>Join the network to stay up to date!</p>
+                <div
+                    class="border-2 border-white px-4 py-2 transition-all hover:bg-white hover:text-darkBlue font-bold lg:text-base"
+                >
+                    Register
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="bg-darkDarkBlue w-full">
+            <div class="container text-white mx-auto pt-2">
+                <!-- FLEX CONTAINER -->
+                <div class="flex flex-col items-center pb-10">
+                    <div class="text-3xl font-bold text-red-500 mb-8 mt-5">
+                        Logo
+                    </div>
+                    <div
+                        class="flex w-full flex-col md:flex-row justify-between space-y-10 md:space-y-0 relative md:px-20"
+                    >
+                        <!-- SOCIALS -->
+                        <div class="flex flex-col justify-start items-center">
+                            <h3 class="font-bold">Find us on our socials!</h3>
+                            <div
+                                class="flex flex-row justify-around items-center space-x-5"
+                            >
+                                <a class="block" href="#">
+                                    <svg
+                                        class="w-12 h-12 fill-white cursor-pointer hover:fill-skyBlue transition-all"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 576 512"
+                                    >
+                                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"
+                                        />
+                                    </svg>
+                                </a>
+                                <a class="block" href="#">
+                                    <svg
+                                        class="w-12 h-12 fill-white cursor-pointer hover:fill-skyBlue transition-all"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 512 512"
+                                    >
+                                        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                        <path
+                                            d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"
+                                        />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- WEBPAGE LINKS -->
+                        <div
+                            class="md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2"
+                        >
+                            <div class="flex flex-col space-y-1 items-center">
+                                <a
+                                    class="inline border-b-2 border-transparent hover:border-skyBlue hover:text-SkyBlue"
+                                    href="#"
+                                    >Home</a
+                                >
+                                <a
+                                    class="inline border-b-2 border-transparent hover:border-skyBlue hover:text-SkyBlue"
+                                    href="#"
+                                    >Prevention</a
+                                >
+                                <a
+                                    class="inline border-b-2 border-transparent hover:border-skyBlue hover:text-SkyBlue"
+                                    href="#"
+                                    >Resources</a
+                                >
+                                <a
+                                    class="inline border-b-2 border-transparent hover:border-skyBlue hover:text-SkyBlue"
+                                    href="#"
+                                    >Events</a
+                                >
+                            </div>
+                        </div>
+                        <!-- EMAIL ADDRESS -->
+                        <div class="flex flex-col justify-start items-center">
+                            <h3 class="font-bold">Contact us here</h3>
+                            <a
+                                href="mailto"
+                                class="flex justify-center items-center space-x-2 cursor-pointer border-b-2 border-transparent border-dashed text-sm group hover:text-skyBlue hover:border-skyBlue transition-all"
+                            >
+                                <svg
+                                    class="w-6 h-6 fill-white mr-2 transition-all group-hover:fill-skyBlue"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 512 512"
+                                >
+                                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                    <path
+                                        d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"
+                                    />
+                                </svg>
+                                suicidepreventionnetwork@qub.ac.uk
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- LOWER FOOTER -->
+        <section class="w-full py-2 bg-slate-900">
+            <div
+                class="flex flex-col text-white text-sm justify-between items-center mx-4 space-y-2 md:space-y-0 md:flex-row"
+            >
+                <div class="text-gray">
+                    <a
+                        class="border-b-2 border-transparent hover:border-white hover:text-white"
+                        href="#"
+                        >Privacy</a
+                    >
+                    <div class="inline-block">|</div>
+                    <a
+                        class="border-b-2 border-transparent hover:border-white hover:text-white"
+                        href="#"
+                        >T&Cs</a
+                    >
+                </div>
+                <div>&copy; 2022, All Rights Reserved</div>
+            </div>
+        </section>
+
+        <script src="./js/navbarChange.js"></script>
+    </body>
+</html>
