@@ -20,7 +20,7 @@
     </head>
     <body>
         <!-- NAVIGATION -->
-        <nav id="mainNav" class="transition-all">
+        <nav id="mainNav" class="transition-all z-10">
             <div class="relative container mx-auto p-5 scale-90">
                 <!-- FLEX CONTAINER FOR NAV -->
                 <div
@@ -75,22 +75,64 @@
                             Register
                         </a>
                     </div>
-                    <!-- HAMBURGER MENU -->
-                    <div class="hamburger md:hidden">
-                        <div class="hamburger-top"></div>
-                        <div class="hamburger-middle"></div>
-                        <div class="hamburger-bottom"></div>
+                    <!-- HAMBURGER ICON -->
+                    <button
+                        id="menu-btn"
+                        class="block hamburger md:hidden focus:outline-none"
+                    >
+                        <span
+                            class="ham-line hamburger--relative hamburger-top"
+                        ></span>
+                        <span
+                            class="ham-line hamburger--relative hamburger-middle"
+                        ></span>
+                        <span
+                            class="ham-line hamburger--relative hamburger-bottom"
+                        ></span>
+                    </button>
+                </div>
+                <!-- MOBILE MENU -->
+                <div class="open md:hidden z-10 transition-all">
+                    <div
+                        id="menu"
+                        class="text-center z-10 absolute hidden flex-col items-center self-end py-8 mt-10 space-y-1 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+                    >
+                        <a
+                            class="hover:bg-slate-50 w-full p-4 text-skyBlue hover:text-darkBlue"
+                            href="./events.html"
+                            >Home</a
+                        >
+                        <a
+                            class="hover:bg-slate-50 w-full p-4 text-skyBlue hover:text-darkBlue"
+                            href="./prevention.html"
+                            >Prevention</a
+                        >
+                        <a
+                            class="hover:bg-slate-50 w-full p-4 text-skyBlue hover:text-darkBlue"
+                            href="./resources.html"
+                            >Resources</a
+                        >
+                        <a
+                            class="hover:bg-slate-50 w-full p-4 text-skyBlue hover:text-darkBlue"
+                            href="./events.html"
+                            >Events</a
+                        >
+                        <a
+                            class="hover:bg-slate-50 w-full p-4 text-skyBlue hover:text-darkBlue"
+                            href="./admin.html"
+                            >Admin</a
+                        >
                     </div>
                 </div>
             </div>
         </nav>
 
         <!-- MAIN CONTENT BODY -->
-        <section class="main--content mb-32">
+        <section class="main--content mb-32 -z-10">
             <!-- MAIN HEADER -->
             <div class="flex justify-center items-center mt-10">
                 <h1
-                    class="main--header mx-2 mb-10 text-3xl font-bold text-skyBlue text-center md:text-4xl"
+                    class="-z-10 main--header mx-2 mb-10 text-3xl font-bold text-skyBlue text-center md:text-4xl"
                 >
                     <span class="header--special_character">S</span>uicide
                     <span class="header--special_character">P</span>revention &

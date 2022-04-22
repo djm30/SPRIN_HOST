@@ -2,6 +2,11 @@ navbar = document.querySelector("#mainNav");
 contentSection = document.querySelector(".main--content");
 navLinks = [...document.querySelectorAll(".navbar--link")];
 navButtons = [...document.querySelectorAll(".navbar--button")];
+btn = document.getElementById("menu-btn");
+nav = document.getElementById("menu");
+
+hamLines = [...document.querySelectorAll(".ham-line")];
+console.log(hamLines);
 
 document.addEventListener("scroll", (e) => {
     const navHeight = 70;
@@ -18,6 +23,11 @@ document.addEventListener("scroll", (e) => {
             btn.classList.add("navbar--button--fixed");
             btn.classList.remove("navbar--button--relative");
         });
+
+        hamLines.forEach((line) => {
+            line.classList.remove("hamburger--relative");
+            line.classList.add("hamburger--fixed");
+        });
     }
 
     if (distanceFromTop < navHeight) {
@@ -30,5 +40,15 @@ document.addEventListener("scroll", (e) => {
             btn.classList.remove("navbar--button--fixed");
             btn.classList.add("navbar--button--relative");
         });
+        hamLines.forEach((line) => {
+            line.classList.remove("hamburger--fixed");
+            line.classList.add("hamburger--relative");
+        });
     }
+});
+
+btn.addEventListener("click", () => {
+    btn.classList.toggle("open");
+    nav.classList.toggle("flex");
+    nav.classList.toggle("hidden");
 });
